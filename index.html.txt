@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JEE Main College Predictor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>JEE Main College Predictor</h1>
+        <div class="input-group">
+            <label for="rank">Your JEE Main Rank:</label>
+            <input type="number" id="rank" placeholder="e.g., 15000">
+        </div>
+        <div class="input-group">
+            <label for="category">Category:</label>
+            <select id="category">
+                <option value="OPEN">General</option>
+                <option value="OBC-NCL">OBC-NCL</option>
+                <option value="SC">SC</option>
+                <option value="ST">ST</option>
+                <option value="EWS">EWS</option>
+            </select>
+        </div>
+        <button onclick="predictCollege()">Predict Colleges</button>
+        <div id="results"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
